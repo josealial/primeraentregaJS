@@ -14,12 +14,12 @@ function obtenerPrecioDestino(destino) {
 let respuesta
 
 while (true) {
-    respuesta = prompt("Ingrese el destino para saber su precio en minúscula \nMontevideo\nColonia\nRocha\nPara cancelar ingrese: salir")
+    respuesta = prompt("Ingrese el destino para saber su precio: \nMontevideo\nColonia\nRocha\nPara cancelar ingrese: salir")
 
     if (respuesta === "salir") {
 
         break
     }
 
-    alert(obtenerPrecioDestino(respuesta))
+    alert(obtenerPrecioDestino(respuesta.toLowerCase()))
 }
