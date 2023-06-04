@@ -16,7 +16,7 @@ let respuesta
 while (true) {
     respuesta = prompt("Ingrese el destino para saber su precio: \nMontevideo\nColonia\nRocha\nPara cancelar ingrese: salir")
 
-    if (respuesta === "salir") {
+    if (respuesta.toLowerCase() === "salir") {
 
         break
     }
